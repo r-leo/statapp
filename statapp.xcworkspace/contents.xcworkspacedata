@@ -2,6 +2,18 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Podfile">
+   </FileRef>
+   <FileRef
+      location = "group:Podfile.lock">
+   </FileRef>
+   <FileRef
+      location = "group:privacy_policy.md">
+   </FileRef>
+   <FileRef
+      location = "group:README.md">
+   </FileRef>
+   <FileRef
       location = "group:statapp.xcodeproj">
    </FileRef>
    <FileRef

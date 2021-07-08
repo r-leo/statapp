@@ -36,6 +36,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C6075EDA2696A0E800125521 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6075ED62696A0E800125521 /* SwiftyStats.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FEA82381F76C95F005E4349;
+			remoteInfo = SwiftyStatsMobile;
+		};
+		C6075EE02696A10F00125521 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6075EDC2696A10F00125521 /* SwiftyStats.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FEA82381F76C95F005E4349;
+			remoteInfo = SwiftyStatsMobile;
+		};
+		C6075EE62696A11C00125521 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6075EE22696A11C00125521 /* SwiftyStats.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FEA82381F76C95F005E4349;
+			remoteInfo = SwiftyStatsMobile;
+		};
 		C6523264268FBD5A00777408 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C652324A268FBD5700777408 /* Project object */;
@@ -83,6 +104,9 @@
 		99A3E24B4CCF374CC92D12ED /* Pods_statappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_statappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D49171B58154BA5BE50FF3 /* Pods-statappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-statappTests.debug.xcconfig"; path = "Target Support Files/Pods-statappTests/Pods-statappTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C28A328F6DC1255613BEDF5E /* Pods-statappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-statappTests.release.xcconfig"; path = "Target Support Files/Pods-statappTests/Pods-statappTests.release.xcconfig"; sourceTree = "<group>"; };
+		C6075ED62696A0E800125521 /* SwiftyStats.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyStats.xcodeproj; path = "../../../../Downloads/SwiftyStats-master/SwiftyStats/SwiftyStats.xcodeproj"; sourceTree = "<group>"; };
+		C6075EDC2696A10F00125521 /* SwiftyStats.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyStats.xcodeproj; path = "../../../Downloads/SwiftyStats-master/SwiftyStats/SwiftyStats.xcodeproj"; sourceTree = "<group>"; };
+		C6075EE22696A11C00125521 /* SwiftyStats.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyStats.xcodeproj; path = "../../../Downloads/SwiftyStats-master/SwiftyStats/SwiftyStats.xcodeproj"; sourceTree = "<group>"; };
 		C6523255268FBD5700777408 /* statappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statappApp.swift; sourceTree = "<group>"; };
 		C6523257268FBD5700777408 /* DistributionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistributionView.swift; sourceTree = "<group>"; };
 		C6523259268FBD5900777408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -158,6 +182,7 @@
 		82C8C6B6F3E28609D4EC8794 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C6075EDC2696A10F00125521 /* SwiftyStats.xcodeproj */,
 				726F1FC0CFB8C6B2BCA871A1 /* Pods_statapp.framework */,
 				8CF6687F98C54E7E1AC760ED /* Pods_statapp_statappUITests.framework */,
 				99A3E24B4CCF374CC92D12ED /* Pods_statappTests.framework */,
@@ -165,16 +190,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C6075ED72696A0E800125521 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6075EDB2696A0E800125521 /* SwiftyStatsMobile.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6075EDD2696A10F00125521 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6075EE12696A10F00125521 /* SwiftyStatsMobile.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6075EE32696A11C00125521 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6075EE72696A11C00125521 /* SwiftyStatsMobile.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		C6523249268FBD5700777408 = {
 			isa = PBXGroup;
 			children = (
-				C6EC704326951E0B00CD3696 /* SwiftyStats.xcodeproj */,
+				C6AE708D2690E1510024C136 /* statapp.app */,
 				C6523254268FBD5700777408 /* statapp */,
 				C6523266268FBD5A00777408 /* statappTests */,
 				C6523271268FBD5A00777408 /* statappUITests */,
-				C6AE708D2690E1510024C136 /* statapp.app */,
 				C6AE708E2690E1510024C136 /* statappTests.xctest */,
+				C6EC704326951E0B00CD3696 /* SwiftyStats.xcodeproj */,
 				C6AE708F2690E1510024C136 /* statappUITests.xctest */,
+				C6075EE22696A11C00125521 /* SwiftyStats.xcodeproj */,
 				5F3BBC13616C5641BE930D83 /* Pods */,
 				82C8C6B6F3E28609D4EC8794 /* Frameworks */,
 			);
@@ -220,6 +270,7 @@
 		C6523271268FBD5A00777408 /* statappUITests */ = {
 			isa = PBXGroup;
 			children = (
+				C6075ED62696A0E800125521 /* SwiftyStats.xcodeproj */,
 				C6523272268FBD5A00777408 /* statappUITests.swift */,
 				C6523274268FBD5A00777408 /* Info.plist */,
 			);
@@ -348,8 +399,20 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = C6075ED72696A0E800125521 /* Products */;
+					ProjectRef = C6075ED62696A0E800125521 /* SwiftyStats.xcodeproj */;
+				},
+				{
+					ProductGroup = C6075EDD2696A10F00125521 /* Products */;
+					ProjectRef = C6075EDC2696A10F00125521 /* SwiftyStats.xcodeproj */;
+				},
+				{
 					ProductGroup = C6EC704426951E0B00CD3696 /* Products */;
 					ProjectRef = C6EC704326951E0B00CD3696 /* SwiftyStats.xcodeproj */;
+				},
+				{
+					ProductGroup = C6075EE32696A11C00125521 /* Products */;
+					ProjectRef = C6075EE22696A11C00125521 /* SwiftyStats.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -362,6 +425,27 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		C6075EDB2696A0E800125521 /* SwiftyStatsMobile.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyStatsMobile.framework;
+			remoteRef = C6075EDA2696A0E800125521 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C6075EE12696A10F00125521 /* SwiftyStatsMobile.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyStatsMobile.framework;
+			remoteRef = C6075EE02696A10F00125521 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C6075EE72696A11C00125521 /* SwiftyStatsMobile.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyStatsMobile.framework;
+			remoteRef = C6075EE62696A11C00125521 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		C6EC704F26951E0B00CD3696 /* SwiftyStatsMobile.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
