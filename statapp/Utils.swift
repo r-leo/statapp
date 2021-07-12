@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 func erfinv(y: Double) -> Double {
      let center = 0.7
@@ -37,3 +38,17 @@ func erfinv(y: Double) -> Double {
          return Double(-Int.max)
      }
  }
+
+func comb(n: Float, k: Float) -> Float {
+    if k == 0.0 {
+        return 1.0
+    }
+    else if n == 0 {
+        return 0.0
+    }
+    else {
+        return comb(n: n - 1.0, k: k - 1.0) * n / k
+    }
+}
+
+var FontMath = Font.custom("Times New Roman Italic", size: 20, relativeTo: .body)

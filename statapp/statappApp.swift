@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct statappApp: App {
     
-    @State var distribuciones = [
+    @State var distribuciones_continuas = [
         exponencial,
         //chi_cuadrada,
         lognormal,
@@ -21,10 +21,17 @@ struct statappApp: App {
         uniforme,
     ]
     
+    @State var distribuciones_discretas = [
+        binomial,
+        geom_e,
+        geom_f,
+        poisson,
+    ]
+    
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                MainView(distribuciones: distribuciones)
+                MainView(distribuciones_continuas: distribuciones_continuas, distribuciones_discretas: distribuciones_discretas)
             }
         }
     }

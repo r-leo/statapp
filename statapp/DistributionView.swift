@@ -8,17 +8,18 @@
 import SwiftUI
 import Combine
 
-var FontMath = Font.custom("Times New Roman Italic", size: 20, relativeTo: .body)
-
 struct DistributionView: View {
     
     @StateObject var dist: Distribution
+    var isDiscrete: Bool
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
+            
             
             // Imagen de la distribución
             // ?
+            
             
             // Forma principal
             Form {
@@ -50,11 +51,15 @@ struct DistributionView: View {
                 
                 // Entrada de cálculo
                 Section(header: Text("Cálculo a realizar")) {
-                    Picker(selection: $dist.direct, label: Text("Tipo de cálculo")) {
-                        Text("PDF / CDF").tag(true)
-                        Text("CDF inversa").tag(false)
+                    
+                    if !isDiscrete {
+                        Picker(selection: $dist.direct, label: Text("Tipo de cálculo")) {
+                            Text("PDF / CDF").tag(true)
+                            Text("CDF inversa").tag(false)
+                        }
+                        .pickerStyle(SegmentedPickerStyle())
                     }
-                    .pickerStyle(SegmentedPickerStyle())
+                    
                     if dist.direct {
                         HStack {
                             Label {
@@ -105,17 +110,35 @@ struct DistributionView: View {
                     // Probabilidad directa
                     if dist.direct {
                         HStack {
-                            if !dist.x.value.isEmpty {
-                                Label { Text("PDF en ") + Text("x").font(FontMath) + Text(" = \(dist.x.value)") }
-                                    icon: { Image(systemName: "p.square") }
+                            
+                            // Variable discreta
+                            if isDiscrete {
+                                if !dist.x.value.isEmpty {
+                                    Label { Text("PMF: Pr(") + Text("X").font(FontMath) + Text(" = \(dist.x.value))") }
+                                        icon: { Image(systemName: "p.square") }
+                                }
+                                else {
+                                    Label { Text("PMF: Pr(") + Text("X").font(FontMath) + Text(" = \(Image(systemName: "square.dashed")))") }
+                                        icon: { Image(systemName: "p.square") }
+                                }
                             }
+                            
+                            // Variable continua
                             else {
-                                Label { Text("PDF en ") + Text("x").font(FontMath) + Text(" = \(Image(systemName: "square.dashed"))") }
-                                    icon: { Image(systemName: "p.square") }
+                                if !dist.x.value.isEmpty {
+                                    Label { Text("PDF en ") + Text("x").font(FontMath) + Text(" = \(dist.x.value)") }
+                                        icon: { Image(systemName: "p.square") }
+                                }
+                                else {
+                                    Label { Text("PDF en ") + Text("x").font(FontMath) + Text(" = \(Image(systemName: "square.dashed"))") }
+                                        icon: { Image(systemName: "p.square") }
+                                }
                             }
+                            
                             Spacer()
                             Text(dist.pdf(dist.parameters, dist.x))
                         }
+                        
                         HStack {
                             if !dist.x.value.isEmpty {
                                 Label { Text("CDF: Pr(") + Text("X").font(FontMath) + Text(" ≤ \(dist.x.value))") }
@@ -128,15 +151,33 @@ struct DistributionView: View {
                             Spacer()
                             Text(dist.cdf(dist.parameters, dist.x)["left"]!)
                         }
+                        
                         HStack {
-                            if !dist.x.value.isEmpty {
-                                Label { Text("CDF: Pr(") + Text("X").font(FontMath) + Text(" ≥ \(dist.x.value))") }
-                                    icon: { Image(systemName: "p.square.fill") }
+                            
+                            // Variable discreta
+                            if isDiscrete {
+                                if !dist.x.value.isEmpty {
+                                    Label { Text("CDF: Pr(") + Text("X").font(FontMath) + Text(" > \(dist.x.value))") }
+                                        icon: { Image(systemName: "p.square.fill") }
+                                }
+                                else {
+                                    Label { Text("CDF: Pr(") + Text("X").font(FontMath) + Text(" > \(Image(systemName: "square.dashed")))") }
+                                        icon: { Image(systemName: "p.square.fill") }
+                                }
                             }
+                            
+                            // Variable continua
                             else {
-                                Label { Text("CDF: Pr(") + Text("X").font(FontMath) + Text(" ≥ \(Image(systemName: "square.dashed")))") }
-                                    icon: { Image(systemName: "p.square.fill") }
+                                if !dist.x.value.isEmpty {
+                                    Label { Text("CDF: Pr(") + Text("X").font(FontMath) + Text(" ≥ \(dist.x.value))") }
+                                        icon: { Image(systemName: "p.square.fill") }
+                                }
+                                else {
+                                    Label { Text("CDF: Pr(") + Text("X").font(FontMath) + Text(" ≥ \(Image(systemName: "square.dashed")))") }
+                                        icon: { Image(systemName: "p.square.fill") }
+                                }
                             }
+                            
                             Spacer()
                             Text(dist.cdf(dist.parameters, dist.x)["right"]!)
                         }
@@ -185,7 +226,7 @@ struct DistributionView: View {
 struct DistributionView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            DistributionView(dist: exponencial)
+            DistributionView(dist: exponencial, isDiscrete: true)
         }
     }
 }

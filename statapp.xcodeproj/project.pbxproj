@@ -10,12 +10,17 @@
 		44F0AA7C81A03D82C8B82D47 /* Pods_statapp_statappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF6687F98C54E7E1AC760ED /* Pods_statapp_statappUITests.framework */; };
 		4518456373A77BE812281013 /* Pods_statappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A3E24B4CCF374CC92D12ED /* Pods_statappTests.framework */; };
 		BE26F8B5CD9CAC4B64FABC0E /* Pods_statapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 726F1FC0CFB8C6B2BCA871A1 /* Pods_statapp.framework */; };
+		C6075EED269726CD00125521 /* Plotter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6075EEC269726CD00125521 /* Plotter.swift */; };
+		C6075EF4269B3CD200125521 /* DistBinomial.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6075EF3269B3CD200125521 /* DistBinomial.swift */; };
 		C6523256268FBD5700777408 /* statappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6523255268FBD5700777408 /* statappApp.swift */; };
 		C6523258268FBD5700777408 /* DistributionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6523257268FBD5700777408 /* DistributionView.swift */; };
 		C652325A268FBD5900777408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6523259268FBD5900777408 /* Assets.xcassets */; };
 		C652325D268FBD5900777408 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C652325C268FBD5900777408 /* Preview Assets.xcassets */; };
 		C6523268268FBD5A00777408 /* statappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6523267268FBD5A00777408 /* statappTests.swift */; };
 		C6523273268FBD5A00777408 /* statappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6523272268FBD5A00777408 /* statappUITests.swift */; };
+		C68C54E8269BECA8008BBE93 /* DistPoisson.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68C54E7269BECA8008BBE93 /* DistPoisson.swift */; };
+		C68C54EE269CB0F3008BBE93 /* DistGeomE.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68C54ED269CB0F3008BBE93 /* DistGeomE.swift */; };
+		C68C54F0269CB37B008BBE93 /* DistGeomF.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68C54EF269CB37B008BBE93 /* DistGeomF.swift */; };
 		C68DA981269353BB00FC1178 /* Times New Roman Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C68DA980269353BB00FC1178 /* Times New Roman Italic.ttf */; };
 		C68DA9872693729300FC1178 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68DA9862693729300FC1178 /* AboutView.swift */; };
 		C6AE7081269009DB0024C136 /* Distribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AE7080269009DB0024C136 /* Distribution.swift */; };
@@ -23,7 +28,7 @@
 		C6AE708C2690BFDD0024C136 /* DistExponencial.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AE708B2690BFDD0024C136 /* DistExponencial.swift */; };
 		C6AE709326927BA20024C136 /* NumbersOnly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AE709226927BA20024C136 /* NumbersOnly.swift */; };
 		C6EC702D2693F4E100CD3696 /* DistNormal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EC702C2693F4E100CD3696 /* DistNormal.swift */; };
-		C6EC702F269405FD00CD3696 /* erfinv.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EC702E269405FC00CD3696 /* erfinv.swift */; };
+		C6EC702F269405FD00CD3696 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EC702E269405FC00CD3696 /* Utils.swift */; };
 		C6EC7031269410EE00CD3696 /* DistNormalEstandar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EC7030269410EE00CD3696 /* DistNormalEstandar.swift */; };
 		C6EC7033269481E800CD3696 /* DistUnforme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EC7032269481E800CD3696 /* DistUnforme.swift */; };
 		C6EC703526949FE300CD3696 /* DistTriangular.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EC703426949FE300CD3696 /* DistTriangular.swift */; };
@@ -107,6 +112,8 @@
 		C6075ED62696A0E800125521 /* SwiftyStats.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyStats.xcodeproj; path = "../../../../Downloads/SwiftyStats-master/SwiftyStats/SwiftyStats.xcodeproj"; sourceTree = "<group>"; };
 		C6075EDC2696A10F00125521 /* SwiftyStats.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyStats.xcodeproj; path = "../../../Downloads/SwiftyStats-master/SwiftyStats/SwiftyStats.xcodeproj"; sourceTree = "<group>"; };
 		C6075EE22696A11C00125521 /* SwiftyStats.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyStats.xcodeproj; path = "../../../Downloads/SwiftyStats-master/SwiftyStats/SwiftyStats.xcodeproj"; sourceTree = "<group>"; };
+		C6075EEC269726CD00125521 /* Plotter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plotter.swift; sourceTree = "<group>"; };
+		C6075EF3269B3CD200125521 /* DistBinomial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistBinomial.swift; sourceTree = "<group>"; };
 		C6523255268FBD5700777408 /* statappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statappApp.swift; sourceTree = "<group>"; };
 		C6523257268FBD5700777408 /* DistributionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistributionView.swift; sourceTree = "<group>"; };
 		C6523259268FBD5900777408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -116,6 +123,9 @@
 		C6523269268FBD5A00777408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6523272268FBD5A00777408 /* statappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statappUITests.swift; sourceTree = "<group>"; };
 		C6523274268FBD5A00777408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C68C54E7269BECA8008BBE93 /* DistPoisson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistPoisson.swift; sourceTree = "<group>"; };
+		C68C54ED269CB0F3008BBE93 /* DistGeomE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistGeomE.swift; sourceTree = "<group>"; };
+		C68C54EF269CB37B008BBE93 /* DistGeomF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistGeomF.swift; sourceTree = "<group>"; };
 		C68DA980269353BB00FC1178 /* Times New Roman Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Times New Roman Italic.ttf"; sourceTree = "<group>"; };
 		C68DA9862693729300FC1178 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		C6AE7080269009DB0024C136 /* Distribution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distribution.swift; sourceTree = "<group>"; };
@@ -126,7 +136,7 @@
 		C6AE708F2690E1510024C136 /* statappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = statappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6AE709226927BA20024C136 /* NumbersOnly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersOnly.swift; sourceTree = "<group>"; };
 		C6EC702C2693F4E100CD3696 /* DistNormal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistNormal.swift; sourceTree = "<group>"; };
-		C6EC702E269405FC00CD3696 /* erfinv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = erfinv.swift; sourceTree = "<group>"; };
+		C6EC702E269405FC00CD3696 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		C6EC7030269410EE00CD3696 /* DistNormalEstandar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistNormalEstandar.swift; sourceTree = "<group>"; };
 		C6EC7032269481E800CD3696 /* DistUnforme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistUnforme.swift; sourceTree = "<group>"; };
 		C6EC703426949FE300CD3696 /* DistTriangular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistTriangular.swift; sourceTree = "<group>"; };
@@ -214,6 +224,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		C6075EF2269B3CA800125521 /* Distribuciones discretas */ = {
+			isa = PBXGroup;
+			children = (
+				C6075EF3269B3CD200125521 /* DistBinomial.swift */,
+				C68C54ED269CB0F3008BBE93 /* DistGeomE.swift */,
+				C68C54EF269CB37B008BBE93 /* DistGeomF.swift */,
+				C68C54E7269BECA8008BBE93 /* DistPoisson.swift */,
+			);
+			path = "Distribuciones discretas";
+			sourceTree = "<group>";
+		};
 		C6523249268FBD5700777408 = {
 			isa = PBXGroup;
 			children = (
@@ -234,14 +255,16 @@
 			isa = PBXGroup;
 			children = (
 				C68DA980269353BB00FC1178 /* Times New Roman Italic.ttf */,
-				C6AE708A2690BFC90024C136 /* Distribuciones */,
+				C6075EF2269B3CA800125521 /* Distribuciones discretas */,
+				C6AE708A2690BFC90024C136 /* Distribuciones continuas */,
 				C6523255268FBD5700777408 /* statappApp.swift */,
-				C6EC702E269405FC00CD3696 /* erfinv.swift */,
+				C6EC702E269405FC00CD3696 /* Utils.swift */,
 				C6AE70822690153F0024C136 /* MainView.swift */,
 				C68DA9862693729300FC1178 /* AboutView.swift */,
 				C6523257268FBD5700777408 /* DistributionView.swift */,
 				C6AE709226927BA20024C136 /* NumbersOnly.swift */,
 				C6AE7080269009DB0024C136 /* Distribution.swift */,
+				C6075EEC269726CD00125521 /* Plotter.swift */,
 				C6523259268FBD5900777408 /* Assets.xcassets */,
 				C652325E268FBD5900777408 /* Info.plist */,
 				C652325B268FBD5900777408 /* Preview Content */,
@@ -277,7 +300,7 @@
 			path = statappUITests;
 			sourceTree = "<group>";
 		};
-		C6AE708A2690BFC90024C136 /* Distribuciones */ = {
+		C6AE708A2690BFC90024C136 /* Distribuciones continuas */ = {
 			isa = PBXGroup;
 			children = (
 				C6AE708B2690BFDD0024C136 /* DistExponencial.swift */,
@@ -289,7 +312,7 @@
 				C6EC703426949FE300CD3696 /* DistTriangular.swift */,
 				C6EC7032269481E800CD3696 /* DistUnforme.swift */,
 			);
-			path = Distribuciones;
+			path = "Distribuciones continuas";
 			sourceTree = "<group>";
 		};
 		C6EC704426951E0B00CD3696 /* Products */ = {
@@ -559,9 +582,13 @@
 			files = (
 				C6EC703526949FE300CD3696 /* DistTriangular.swift in Sources */,
 				C6EC702D2693F4E100CD3696 /* DistNormal.swift in Sources */,
-				C6EC702F269405FD00CD3696 /* erfinv.swift in Sources */,
+				C6075EED269726CD00125521 /* Plotter.swift in Sources */,
+				C6EC702F269405FD00CD3696 /* Utils.swift in Sources */,
+				C68C54F0269CB37B008BBE93 /* DistGeomF.swift in Sources */,
 				C68DA9872693729300FC1178 /* AboutView.swift in Sources */,
+				C6075EF4269B3CD200125521 /* DistBinomial.swift in Sources */,
 				C6EC70592695E8D700CD3696 /* DistLogNormal.swift in Sources */,
+				C68C54E8269BECA8008BBE93 /* DistPoisson.swift in Sources */,
 				C6EC7033269481E800CD3696 /* DistUnforme.swift in Sources */,
 				C6AE7081269009DB0024C136 /* Distribution.swift in Sources */,
 				C6AE70832690153F0024C136 /* MainView.swift in Sources */,
@@ -571,6 +598,7 @@
 				C6EC703C2694AE7200CD3696 /* DistT.swift in Sources */,
 				C6AE709326927BA20024C136 /* NumbersOnly.swift in Sources */,
 				C6523256268FBD5700777408 /* statappApp.swift in Sources */,
+				C68C54EE269CB0F3008BBE93 /* DistGeomE.swift in Sources */,
 				C6EC7057269531E400CD3696 /* DistChiSquare.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -729,7 +757,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4E4392C23A025A366F2A4B21 /* Pods-statapp.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_2;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"statapp/Preview Content\"";
@@ -741,7 +769,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigoleo.statapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -753,7 +781,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 465D688482C3753EC3486C58 /* Pods-statapp.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_2;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"statapp/Preview Content\"";
@@ -765,7 +793,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigoleo.statapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

@@ -9,17 +9,31 @@ import SwiftUI
 
 struct MainView: View {
     
-    var distribuciones: [Distribution]
+    var distribuciones_continuas: [Distribution]
+    var distribuciones_discretas: [Distribution]
     @State private var about: Bool = false
     
     var body: some View {
         
         List {
-            ForEach (distribuciones) { dist in
-                NavigationLink(destination: DistributionView(dist: dist)) {
-                    Text(dist.name)
+            
+            Section(header: Text("Continuas")) {
+                ForEach (distribuciones_continuas) { dist in
+                    NavigationLink(destination: DistributionView(dist: dist, isDiscrete: false)) {
+                        Text(dist.name)
+                    }
                 }
             }
+            
+            Section(header: Text("Discretas")) {
+                ForEach (distribuciones_discretas) { dist in
+                    NavigationLink(destination: DistributionView(dist: dist, isDiscrete: true)) {
+                        Text(dist.name)
+                    }
+                }
+            }
+            
+                
         }
         .listStyle(InsetGroupedListStyle())
         .navigationTitle("Distribuciones")
@@ -30,7 +44,10 @@ struct MainView: View {
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            MainView(distribuciones: [exponencial, normal])
+            MainView(
+                distribuciones_continuas: [exponencial, normal],
+                distribuciones_discretas: [binomial]
+            )
         }
     }
 }
