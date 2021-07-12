@@ -4,7 +4,7 @@ Rodrigo Leo ha desarrollado la aplicación "StatApp" (en adelante "el Servicio")
 
 Si decide emplear el Servicio, está de acuerdo en la recolección y uso de información en relación a esta política. La información personal recolectada se usa únicamente para proveer y mejorar el Servicio.
 
-1. RECOLECCIÓN Y USO DE INFORMACIÓN PERSONAL .Para usar el Servicio no se requiere proporcionar niguna información personal.
+1. RECOLECCIÓN Y USO DE INFORMACIÓN PERSONAL. Para usar el Servicio no se requiere proporcionar niguna información personal.
 
 2. REGISTRO DE DATOS ("LOG DATA"). En caso de un error en el Servicio, la aplicación recolecta datos e información denominados "Log Data". Esta puede incluir información como la dirección IP de su dispositivo, modelo del dispositivo y versión del sistema operativo, entre otros.
 

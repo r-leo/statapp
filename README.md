@@ -2,7 +2,7 @@
 
 ## Acerca de
 
-Este repositorio está dedicado a la aplicación StatApp, una aplicación para iOS que tiene el objetivo de proveer de cálculos sobre las funciones de probabilidad y distribución acumulada (PDF / CDF), así como sus respectivas funciones inversas, para las distribuciones de probabilidad más comunes.
+Este repositorio está dedicado a StatApp, una aplicación para iOS que tiene el objetivo de proveer cálculos sobre las funciones de probabilidad y distribución acumulada (PDF / PMF / CDF), así como sus respectivas funciones inversas, para las distribuciones de probabilidad más comunes.
 
 ## Soporte y contacto
 
